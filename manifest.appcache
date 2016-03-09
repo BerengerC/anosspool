@@ -1,0 +1,27 @@
+CACHE MANIFEST
+
+#version 1.3 2-29-2016
+
+CACHE:
+
+#images
+http://anosspool.simplesilence.fr/img/cuisse.png
+http://anosspool.simplesilence.fr/img/poulet.png
+http://anosspool.simplesilence.fr/img/bg.jpg
+
+#internal HTML documents
+http://anosspool.simplesilence.fr/sound/anoospool-ost.mp3
+
+#style sheets
+http://anosspool.simplesilence.fr/animation.css
+http://anosspool.simplesilence.fr/style.css
+
+
+#javascript files
+https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js
+http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js
+http://anosspool.simplesilence.fr/scripts/jquery.smooth-scroll.js
+http://anosspool.simplesilence.fr/scripts.js
+
+NETWORK:
+*
