@@ -41,9 +41,9 @@
 }
 
 @keyframes wbpulse {
-    0%{box-shadow: 0 0 10px 0px #bb0000;}
-    66%{box-shadow: 0 0 100px 0px #bb0000;}
-    100%{box-shadow: 0 0 10px 0px #bb0000;}
+    0%{box-shadow: 0 0 10px 0 #bb0000;}
+    66%{box-shadow: 0 0 100px 0 #bb0000;}
+    100%{box-shadow: 0 0 10px 0 #bb0000;}
 }
 
 @keyframes textblink {
