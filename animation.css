@@ -91,3 +91,104 @@
     0%{transform: scale(1,1);}
     100%{transform: scale(1.2,1.2);}
 }
+
+
+@keyframes modalappear {
+
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+/* Loader animation*/
+
+
+@keyframes sparkleLoad-1 {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) rotate(0deg) scale(0);
+    }
+    25%,
+    75% {
+        opacity: 1;
+        transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) rotate(0deg) scale(0);
+    }
+}
+@keyframes sparkleLoad-2 {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) rotate(60deg) scale(0);
+    }
+    25%,
+    75% {
+        opacity: 1;
+        transform: translate(-50%, -50%) rotate(60deg) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) rotate(60deg) scale(0);
+    }
+}
+@keyframes sparkleLoad-3 {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) rotate(120deg) scale(0);
+    }
+    25%,
+    75% {
+        opacity: 1;
+        transform: translate(-50%, -50%) rotate(120deg) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) rotate(120deg) scale(0);
+    }
+}
+@keyframes sparkleLoad-4 {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) rotate(180deg) scale(0);
+    }
+    25%,
+    75% {
+        opacity: 1;
+        transform: translate(-50%, -50%) rotate(180deg) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) rotate(180deg) scale(0);
+    }
+}
+@keyframes sparkleLoad-5 {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) rotate(240deg) scale(0);
+    }
+    25%,
+    75% {
+        opacity: 1;
+        transform: translate(-50%, -50%) rotate(240deg) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) rotate(240deg) scale(0);
+    }
+}
+@keyframes sparkleLoad-6 {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) rotate(300deg) scale(0);
+    }
+    25%,
+    75% {
+        opacity: 1;
+        transform: translate(-50%, -50%) rotate(300deg) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) rotate(300deg) scale(0);
+    }
+}

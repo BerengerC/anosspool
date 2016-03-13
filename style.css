@@ -75,6 +75,12 @@ h2{
     top: -46px;
 }
 
+h3 {
+    margin: 0;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
 .viewer{
 
 }
@@ -138,7 +144,7 @@ header{
 }
 
 input[type="text"], input[type="number"]{
-    height: 42px;
+    height: 36px;
     background: rgba(255,255,255,0.05);
     border: solid 1px rgba(255,255,255,0.3);
     padding: 0 10px 0 10px;
@@ -146,18 +152,18 @@ input[type="text"], input[type="number"]{
     font-size: 14px;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin: 0 35px 0 0;
+    margin: 0 15px 0 0;
 }
 
 
-button, .button{
-    background: rgba(82, 197, 46, 0.33);
+button, .button, a#twitchalertsload{
+    background: rgba(50, 195, 162, 0.33);
     border: solid 1px rgba(255,255,255,0.4);
     font-family: pill_gothic_600mgregular, sans serif;
     font-size: 14px;
     color: #ffffff;
     text-transform: uppercase;
-    padding: 8px 23px 7px 23px;
+    padding: 5px 23px 4px 23px;
     box-shadow: 0 0 0 0 rgba(255,255,255,0);
     transition: all 0.3s ease-in-out;
 
@@ -168,8 +174,13 @@ button, .button{
     top: 8px;
 }
 
-button:hover, .button:hover{
-    background: rgba(124, 255, 122, 0.62);
+#twitchalertsload{
+    padding: 11px 23px 12px 23px!important;
+    margin-left: 15px;
+}
+
+button:hover, .button:hover, a#twitchalertsload:hover{
+    background: rgba(50, 195, 162, 0.66);
     border: solid 1px rgba(255,255,255,1);
     box-shadow: 0 0 20px 2px rgba(255,255,255,0.2);
     transition: all 0.3s ease-in-out;
@@ -365,15 +376,17 @@ button:hover, .button:hover{
 /*-----------*/
 
 .modal-wrap{
-    display: block;
+    display: none;
     position: fixed;
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.6);
     z-index: 1000;
-    transition: All 400ms ease-in-out;
-    opacity: 0;
+    opacity: 1;
+    animation: modalappear 400ms ease-in-out;
+    transition: all 1000ms ease-in-out;
 }
+
 
 .modal-block{
     display: block;
@@ -385,7 +398,7 @@ button:hover, .button:hover{
     padding: 35px 35px 70px 35px;
     background-color: rgba(0,0,0,1);
     z-index: 1001;
-    border-left: solid 100px rgba(255, 140, 0, 0.78);
+    border-left: solid 100px rgba(50, 195, 162, 0.9);
 }
 
 .modal-block p {
@@ -398,4 +411,53 @@ div#close-modal {
     bottom: 3px;
     right: 35px;
     margin-bottom: 35px;
+}
+
+.loader-wrap {
+    position: relative;
+    margin: 50px auto;
+    width: 200px;
+    height: 200px;
+}
+
+.loader-slice {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    border: 25px solid transparent;
+    border-left-width: 50px;
+    border-right-width: 0;
+    border-top-color: rgba(50, 195, 162, 1);
+    transform: translate(-50%, -50%);
+}
+.loader-slice:nth-child(1) {
+    border-top-color: rgba(255,255,255,0.15);
+    transform: translate(-50%, -50%) rotate(0deg) scale(0);
+    animation: sparkleLoad-1 2s 0.07s infinite;
+}
+.loader-slice:nth-child(2) {
+    border-top-color: rgba(255,255,255,0.30);
+    transform: translate(-50%, -50%) rotate(60deg) scale(0);
+    animation: sparkleLoad-2 2s 0.14s infinite;
+}
+.loader-slice:nth-child(3) {
+    border-top-color: rgba(255,255,255,0.45);
+    transform: translate(-50%, -50%) rotate(120deg) scale(0);
+    animation: sparkleLoad-3 2s 0.21s infinite;
+}
+.loader-slice:nth-child(4) {
+    border-top-color: rgba(255,255,255,0.60);
+    transform: translate(-50%, -50%) rotate(180deg) scale(0);
+    animation: sparkleLoad-4 2s 0.28s infinite;
+}
+.loader-slice:nth-child(5) {
+    border-top-color: rgba(255,255,255,0.75)2;
+    transform: translate(-50%, -50%) rotate(240deg) scale(0);
+    animation: sparkleLoad-5 2s 0.35s infinite;
+}
+.loader-slice:nth-child(6) {
+    border-top-color: rgba(255,255,255,0.90);
+    transform: translate(-50%, -50%) rotate(300deg) scale(0);
+    animation: sparkleLoad-6 2s 0.42s infinite;
 }

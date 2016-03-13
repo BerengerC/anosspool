@@ -3,3 +3,26 @@
                             <div class="input-before"></div><input type="number" id="chickentip" placeholder="Tip..." style="width: 20%;">
                             <button id="chickenadd" onclick="addChickenInArray(chickenList)"><img src="/img/cuisse.png" width="25px" height="25px"></button>
                         </div>
+
+
+<!doctype html>
+<html>
+<head>
+    <title>Tir de poulet</title>
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class='loader-wrap'>
+        <div class='loader-slice'></div>
+        <div class='loader-slice'></div>
+        <div class='loader-slice'></div>
+        <div class='loader-slice'></div>
+        <div class='loader-slice'></div>
+        <div class='loader-slice'></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <!--<script src="scripts/twitch-alerts-load.js"></script>-->
+</body>
+</html>

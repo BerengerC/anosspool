@@ -1,5 +1,5 @@
 <!doctype html>
-<html manifest="manifest.appcache">
+<html >
 <head>
     <title>Tir de poulet</title>
     <link rel="stylesheet" href="animation.css">
@@ -7,17 +7,14 @@
 </head>
 <body>
     <div class="viewer" id="viewer">
-        <!--<div class="modal-wrap" id="modal">
+        <div class="modal-wrap" id="twitchmodal">
             <div class="modal-block">
-                <h1>Salut Anoss</h1>
-                <p>Comme je t'ai surement envoyé ce bouzin par twitter, j'ai pas pu t'expliquer ce que c'est. C'est une Webapplication qui te permet d'effectuer un tirage au sort parmi des donateurs, en pondérant (déséquilibrant) le tirage en fonction des dons de manière mathématiquement équitable. C'est à dire que si Psychotrope t'envoi 99€ et Slide 1€, slide a 1% de chance de gagner et Psychotrope 99%.</p>
-                <p>Alors voilà, comme j'ai eu envie de délirer, je t'ai fait une animation pour le tirage au sort. Histoire que ça pète. Fait gaffe d'ailleurs y-a du son. l'objectif : que tu puisses faire le tirage en direct, avec l'animation qui donne le suspense et fait du moment "tirage de carte recover" un moment epic.</p>
-                <p>J'ai pas voulu faire de référence à la carte recover au cas où tu veuilles l'utiliser aussi pour d'autre tirage au sort (d'ailleurs si tu met toujours 1 en Tip, ça fait un tirage équilibré). Y-a plein d'améliorations possibles (peut-être même une liaison Twitch alert pour charger la liste des donateurs). Contacte moi si tu veux en discuter. Bien sûr j'enlèverai cette fenetre avant que tu l'utilises ;)</p>
-                <p>Bérenger "BeeHaniwro"</p>
-                <p>PS Important : Cette chose ne marche que dans Chrome (pas testé ailleurs) et avec la fenetre genre agrandi. L'animation est en HD. S'il faut je te ferai un bouton plein écran.</p>
-                <div class="button" id="close-modal" onclick="closeModal()">J'ESSAYE</div>
+                <h3>Loading your Chickens from TwitchAlerts</h3>
+                <div id="twitchmodalcontent">
+
+                </div>
             </div>
-        </div>-->
+        </div>
 
         <section class="screen" id="pool-screen">
             <div class="wrap">
@@ -31,9 +28,10 @@
                     <div class="content-box">
                         <h2>Creation de liste</h2>
                         <div id="chicken-form">
-                            <input type="text" id="chickenblaz" placeholder="Blaz..." style="width: 278px;">
-                            <input type="number" id="chickentip" placeholder="Tip..." style="width: 178px;">
+                            <input type="text" id="chickenblaz" placeholder="Blaz..." style="width: 200px;">
+                            <input type="number" id="chickentip" placeholder="Tip..." style="width: 100px;">
                             <button id="chickenadd" onclick="addChickenInArray(chickenList)"><img src="/img/cuisse.png"></button>
+                            <button id="twitchalertsload" onclick="authorizeTwitchAlerts()">LOAD TA</button>
                         </div>
                         <div id="chickenlist">
 
@@ -51,6 +49,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="/scripts/jquery.smooth-scroll.js"></script>
+    <script src="/scripts/ss-toolbox.js"></script>
     <script src="scripts.js"></script>
+    <script src="/scripts/twitch-alerts-load.js"></script>
+
+
 </body>
 </html>

@@ -21,9 +21,6 @@ $(window).load(function() {
     $('.viewer').css('width', vWidth).css('height', vHeight);
     $('.screen').css('width', vWidth).css('height', vHeight);
     $('#animation-wrap').css('left', vWidth);
-
-    /*  Affichage modale */
-    //$('#modal').animate({opacity: "1"},400); /* fermeture à la fin du script*/
 });
 
 $(window).resize(function() {
@@ -246,17 +243,3 @@ function closeModal(){
         $('#modal').css('display','none');
     },400);
 }*/
-
-function demoList(){
-    var demoList;
-    demoList = [{chickenBlaz: "BeeHaniwro", chickenTip: "5"}, {chickenBlaz: "Anoss", chickenTip: "8"}, {
-        chickenBlaz: "Psychotrope",
-        chickenTip: "200"
-    }, {chickenBlaz: "Petit_PiedSC2", chickenTip: "2"}, {chickenBlaz: "Moobot", chickenTip: "18"}, {
-        chickenBlaz: "Jean-Michel",
-        chickenTip: "50"
-    }, {chickenBlaz: "Kerrigan", chickenTip: "22"}, {chickenBlaz: "Artanis", chickenTip: "6"}];
-
-    chickenList = demoList;
-    displayChickenList();
-}
